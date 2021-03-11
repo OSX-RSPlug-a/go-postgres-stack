@@ -1,0 +1,48 @@
+version: '3.2'
+
+services:
+  app:
+    build: .
+    ports: 
+      - 8080:8080 
+    restart: on-failure
+    volumes:
+      - api:/usr/src/app/
+    depends_on:
+      - stack-postgres
+    networks:
+      - stack
+
+  stack-postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: go-auth
+    ports:
+      - '15432:5432'
+    volumes:
+      - database_postgres:/var/lib/postgresql/data
+    networks:
+      - stack
+    
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "kern.log@outlook.com"
+      PGADMIN_DEFAULT_PASSWORD: "@root#=-098765!"
+    depends_on:
+      - stack-postgres
+    ports:
+      - "5050:80"
+    networks:
+      - stack
+    restart: unless-stopped
+
+volumes:
+  api:
+  database_postgres:                 
+  
+networks:
+  stack:
+    driver: bridge
