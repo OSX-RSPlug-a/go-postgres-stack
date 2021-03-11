@@ -1,4 +1,3 @@
-# Start from golang base image
 FROM golang:alpine as builder
 
 LABEL maintainer="Fernando <kern.log@outlook.com>"
