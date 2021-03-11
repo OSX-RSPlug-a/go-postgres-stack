@@ -24,7 +24,7 @@ sudo apt upgrade -y
 
 
 # Enable Firewall
-sudo ufw enable -y
+sudo ufw enable
 
 
 # configure the firewall
