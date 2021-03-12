@@ -60,7 +60,7 @@ maxretry = 4
 
 
 # Install essential packs
-sudo apt install netdata p7zip-full net-tools speedtest-cli build-essential checkinstall libssl-dev -y
+sudo apt install netdata p7zip-full net-tools speedtest-cli build-essential checkinstall libssl-dev nginx -y
 
 
 # Docker option install 
