@@ -17,6 +17,7 @@ Tecnologias utilizadas:
     - NETDATA;
 
 
+
 O projeto utilizou as libs da linguagem golang:
 
     - github.com/gorilla/mux 
@@ -24,6 +25,12 @@ O projeto utilizou as libs da linguagem golang:
     - github.com/lib/pq 
     - github.com/rs/cors
 	  
+
+No inicio do código construímos a estrutura das tabelas e seus campos com o gorm;
+Em seguida criamos os dados a serem inseridos;
+Após a esrtutura do banco criada, criaremos as rotas com a lib mux para as requisições http da aplicação;
+Então também criaremos as variavies com as informações de conexão; 
+Em seguida faremos todas as funções necessarias para buscar as informações em banco de dados relacionado a cada rota; 
 
 
 Iniciar the projeto em desenvolvimento:
