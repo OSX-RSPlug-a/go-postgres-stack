@@ -20,9 +20,9 @@ Tecnologias utilizadas:
 O projeto utilizou as libs da linguagem golang:
 
     - github.com/gorilla/mux 
-	  - github.com/jinzhu/gorm 
-	  - github.com/lib/pq 
-	  - github.com/rs/cors
+    - github.com/jinzhu/gorm 
+    - github.com/lib/pq 
+    - github.com/rs/cors
 	  
 
 
