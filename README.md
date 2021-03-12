@@ -2,7 +2,7 @@
 
 Sobre esse projeto teste:
 
-Desenvolver uma aplicação web que responde por GET com um JSON. 
+Desenvolver uma aplicação web que responde por GET com um JSON, vindo de uma tabela em um banco relacional. 
 A estrutura deve ter um processo de automação para a construção da aplicação e utilizar de container para o funcionamento da aplicação.
 
 
