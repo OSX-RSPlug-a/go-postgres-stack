@@ -26,7 +26,7 @@ O projeto utilizou as libs da linguagem golang:
 	  
 
 
-Iniciar the project:
+Iniciar the projeto em desenvolvimento:
 
       go run main.go
       
