@@ -37,7 +37,7 @@ sudo ufw allow https
 sudo ufw allow 443/tcp
 sudo ufw allow 8080/tcp
 sudo ufw allow 5050/tcp
-sudo ufw allow 19999/tcp
+sudo ufw allow http
 
 
 # Disabling root login 
